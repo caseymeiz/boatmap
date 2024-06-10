@@ -1,0 +1,17 @@
+git attrs==23.2.0
+joblib==1.4.0
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+networkx==3.3
+numpy==2.0.0rc1
+pandas==2.2.2
+python-dateutil==2.9.0.post0
+pytz==2024.1
+referencing==0.34.0
+rpds-py==0.18.0
+scikit-learn==1.4.2
+scipy==1.13.0
+six==1.16.0
+threadpoolctl==3.4.0
+trimesh==4.3.1
+tzdata==2024.1
