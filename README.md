@@ -47,7 +47,7 @@ def simulate_ecg_fn(index: int):
 
 ### `bayes3d.py` 
 
-Use a GP to model the expected similarity between the target ecg and a prospective ecg in a different location on the heart. Has an acquisition function to suggset where to collect the next ecg from.
+Uses a GP to model the expected similarity between the target ecg and a prospective ecg in a different location on the heart. Has an acquisition function to suggset where to collect the next ecg from.
 
 ### `guide.py`
 Iteratively fits our surrogate model in `bayes3d.py` and follows the suggested locations to collect ecgs from. The process stops when an ecg collected reaches a similarity threshold that is sufficient.
