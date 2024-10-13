@@ -1,5 +1,18 @@
 # BOATMAP
+Paper: https://www.sciencedirect.com/science/article/pii/S0010482524012861
 
+```
+@article{meisenzahl_2024,
+title = {BOATMAP: Bayesian Optimization Active Targeting for Monomorphic Arrhythmia Pace-mapping},
+journal = {Computers in Biology and Medicine},
+volume = {182},
+pages = {109201},
+year = {2024},
+issn = {0010-4825},
+doi = {https://doi.org/10.1016/j.compbiomed.2024.109201},
+author = {Casey Meisenzahl and Karli Gillette and Anton J. Prassl and Gernot Plank and John L. Sapp and Linwei Wang},
+}
+```
 
 ## Install
 
