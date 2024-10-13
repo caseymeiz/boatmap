@@ -14,6 +14,24 @@ author = {Casey Meisenzahl and Karli Gillette and Anton J. Prassl and Gernot Pla
 }
 ```
 
+## Component overview
+
+### `bayes3d.py` 
+
+Uses a GP to model the expected similarity between the target ecg and a prospective ecg in a different location on the heart. Has an acquisition function to suggset where to collect the next ecg from.
+
+### `guide.py`
+Iteratively fits our surrogate model in `bayes3d.py` and follows the suggested locations to collect ecgs from. The process stops when an ecg collected reaches a similarity threshold that is sufficient.
+
+### `similarity_metrics.py`
+Models the similarity between a target ecg and a newly collected ecg.
+
+### `termination_criteria.py`
+Predicate to determine if the collected ecg is the predicted location of the target ecg.
+
+### `util.py`
+Extracts the coordinates in the provided heart geometry that are viable for pace mapping.
+
 ## Install
 
 ```shell
@@ -56,20 +74,3 @@ def simulate_ecg_fn(index: int):
     return j
 ```
 
-## Component overview
-
-### `bayes3d.py` 
-
-Uses a GP to model the expected similarity between the target ecg and a prospective ecg in a different location on the heart. Has an acquisition function to suggset where to collect the next ecg from.
-
-### `guide.py`
-Iteratively fits our surrogate model in `bayes3d.py` and follows the suggested locations to collect ecgs from. The process stops when an ecg collected reaches a similarity threshold that is sufficient.
-
-### `similarity_metrics.py`
-Models the similarity between a target ecg and a newly collected ecg.
-
-### `termination_criteria.py`
-Predicate to determine if the collected ecg is the predicted location of the target ecg.
-
-### `util.py`
-Extracts the coordinates in the provided heart geometry that are viable for pace mapping.
