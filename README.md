@@ -1,6 +1,8 @@
 # BOATMAP
 Paper: https://www.sciencedirect.com/science/article/pii/S0010482524012861
 
+![Overview Figure](./overview.png)
+
 ```
 @article{meisenzahl_2024,
 title = {BOATMAP: Bayesian Optimization Active Targeting for Monomorphic Arrhythmia Pace-mapping},
